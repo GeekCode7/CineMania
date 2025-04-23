@@ -8,14 +8,14 @@ const mockMovies: Movie[] = [
     id: 1,
     title: "Inception",
     releaseDate: "2020-07-16",
-    posterPath: "https://via.placeholder.com/300x450?text=Inception",
+    posterPath: "/src/assets/images/inception.avif",
     overview: "Dom Cobb es un ladrón con una extraña habilidad para entrar en los sueños de la gente y robarles los secretos de sus subconscientes.",
     voteAverage: 8.8,
     genres: [{ id: 28, name: "Acción" }, { id: 878, name: "Ciencia ficción" }],
     runtime: 148,
     cast: [
-      { id: 1, name: "Leonardo DiCaprio", character: "Dom Cobb", profilePath: "https://via.placeholder.com/100x100" },
-      { id: 2, name: "Joseph Gordon-Levitt", character: "Arthur", profilePath: "https://via.placeholder.com/100x100" }
+      { id: 1, name: "Leonardo DiCaprio", character: "Dom Cobb", profilePath: "/src/assets/images/cast/LeonardoDicaprio.jpg" },
+      { id: 2, name: "Joseph Gordon-Levitt", character: "Arthur", profilePath: "/src/assets/images/cast/JosepGordon.jpg" }
     ],
     director: "Christopher Nolan"
   },
@@ -23,14 +23,14 @@ const mockMovies: Movie[] = [
     id: 2,
     title: "The Matrix",
     releaseDate: "1999-03-31",
-    posterPath: "https://via.placeholder.com/300x450?text=Matrix",
+    posterPath: "/src/assets/images/TheMatrix.avif",
     overview: "Un hacker descubre que el mundo en el que vive es una simulación creada por máquinas.",
     voteAverage: 8.7,
     genres: [{ id: 28, name: "Acción" }, { id: 878, name: "Ciencia ficción" }],
     runtime: 136,
     cast: [
-      { id: 3, name: "Keanu Reeves", character: "Neo", profilePath: "https://via.placeholder.com/100x100" },
-      { id: 4, name: "Laurence Fishburne", character: "Morpheus", profilePath: "https://via.placeholder.com/100x100" }
+      { id: 3, name: "Keanu Reeves", character: "Neo", profilePath: "/src/assets/images/cast/KeanuReeves.jpg" },
+      { id: 4, name: "Laurence Fishburne", character: "Morpheus", profilePath: "/src/assets/images/cast/LaurenceFishburne.jpg" }
     ],
     director: "Lana y Lilly Wachowski"
   },
@@ -38,14 +38,14 @@ const mockMovies: Movie[] = [
     id: 3,
     title: "Parasite",
     releaseDate: "2019-05-30",
-    posterPath: "https://via.placeholder.com/300x450?text=Parasite",
+    posterPath: "/src/assets/images/Parasite.avif",
     overview: "La familia Kim, todos desempleados, trama un plan para trabajar en la casa de la adinerada familia Park.",
     voteAverage: 8.6,
     genres: [{ id: 18, name: "Drama" }, { id: 53, name: "Thriller" }],
     runtime: 132,
     cast: [
-      { id: 5, name: "Song Kang-ho", character: "Kim Ki-taek", profilePath: "https://via.placeholder.com/100x100" },
-      { id: 6, name: "Lee Sun-kyun", character: "Park Dong-ik", profilePath: "https://via.placeholder.com/100x100" }
+      { id: 5, name: "Song Kang-ho", character: "Kim Ki-taek", profilePath: "/src/assets/images/cast/SongKangHo.jpg" },
+      { id: 6, name: "Lee Sun-kyun", character: "Park Dong-ik", profilePath: "/src/assets/images/cast/LeeSunKyun.jpg" }
     ],
     director: "Bong Joon-ho"
   },
@@ -53,14 +53,14 @@ const mockMovies: Movie[] = [
     id: 4,
     title: "Avengers: Endgame",
     releaseDate: "2019-04-26",
-    posterPath: "https://via.placeholder.com/300x450?text=Avengers",
+    posterPath: "/src/assets/images/AvengersEndgame.avif",
     overview: "Los Vengadores y sus aliados deben estar dispuestos a sacrificarlo todo para derrotar al poderoso Thanos.",
     voteAverage: 8.4,
     genres: [{ id: 28, name: "Acción" }, { id: 12, name: "Aventura" }, { id: 878, name: "Ciencia ficción" }],
     runtime: 181,
     cast: [
-      { id: 7, name: "Robert Downey Jr.", character: "Tony Stark", profilePath: "https://via.placeholder.com/100x100" },
-      { id: 8, name: "Chris Evans", character: "Steve Rogers", profilePath: "https://via.placeholder.com/100x100" }
+      { id: 7, name: "Robert Downey Jr.", character: "Tony Stark", profilePath: "/src/assets/images/cast/RobertDowney.jpg" },
+      { id: 8, name: "Chris Evans", character: "Steve Rogers", profilePath: "/src/assets/images/cast/ChrisEvans.jpg" }
     ],
     director: "Anthony y Joe Russo"
   },
@@ -68,14 +68,14 @@ const mockMovies: Movie[] = [
     id: 5,
     title: "Joker",
     releaseDate: "2019-10-04",
-    posterPath: "https://via.placeholder.com/300x450?text=Joker",
+    posterPath: "/src/assets/images/joker.avif",
     overview: "En Gotham, Arthur Fleck, un comediante con problemas mentales, es marginado y maltratado por la sociedad.",
     voteAverage: 8.2,
     genres: [{ id: 80, name: "Crimen" }, { id: 18, name: "Drama" }, { id: 53, name: "Thriller" }],
     runtime: 122,
     cast: [
-      { id: 9, name: "Joaquin Phoenix", character: "Arthur Fleck", profilePath: "https://via.placeholder.com/100x100" },
-      { id: 10, name: "Robert De Niro", character: "Murray Franklin", profilePath: "https://via.placeholder.com/100x100" }
+      { id: 9, name: "Joaquin Phoenix", character: "Arthur Fleck", profilePath: "/src/assets/images/cast/joaquinPhoenix.jpg" },
+      { id: 10, name: "Robert De Niro", character: "Murray Franklin", profilePath: "/src/assets/images/cast/RobertDeniro.jpg" }
     ],
     director: "Todd Phillips"
   },
@@ -83,14 +83,14 @@ const mockMovies: Movie[] = [
     id: 6,
     title: "The Dark Knight",
     releaseDate: "2008-07-18",
-    posterPath: "https://via.placeholder.com/300x450?text=Dark+Knight",
+    posterPath: "/src/assets/images/TheDarkKnight.avif",
     overview: "Batman se enfrenta a su mayor enemigo, el Joker, quien siembra el caos en Gotham City.",
     voteAverage: 9.0,
     genres: [{ id: 28, name: "Acción" }, { id: 80, name: "Crimen" }, { id: 18, name: "Drama" }],
     runtime: 152,
     cast: [
-      { id: 11, name: "Christian Bale", character: "Bruce Wayne", profilePath: "https://via.placeholder.com/100x100" },
-      { id: 12, name: "Heath Ledger", character: "Joker", profilePath: "https://via.placeholder.com/100x100" }
+      { id: 11, name: "Christian Bale", character: "Bruce Wayne", profilePath: "/src/assets/images/cast/ChristianBale.jpg" },
+      { id: 12, name: "Heath Ledger", character: "Joker", profilePath: "/src/assets/images/cast/HeathLedger.jpg" }
     ],
     director: "Christopher Nolan"
   }
