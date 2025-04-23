@@ -1,40 +1,45 @@
-# CineMania
+# Instrucciones para ejecutar el proyecto
 
-This template should help get you started developing with Vue 3 in Vite.
+Para ejecutar el proyecto de CineMania, sigue estos pasos:
 
-## Recommended IDE Setup
+## Requisitos previos
+- Node.js (versión 20 o superior)
+- npm (normalmente viene con Node.js)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Pasos para instalar y ejecutar
 
-## Type Support for `.vue` Imports in TS
+1. Clona o descarga el proyecto a tu computador
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+2. Abre una terminal o línea de comandos en el directorio del proyecto
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+3. Instala las dependencias:
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
+4. Inicia el servidor de desarrollo:
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+5. Abre tu navegador y navega a la dirección mostrada en la terminal (generalmente http://localhost:5173)
 
-```sh
-npm run build
-```
+## Estructura de archivos
 
-### Lint with [ESLint](https://eslint.org/)
+El proyecto sigue una estructura estándar de Vue 3 con Composition API y TypeScript:
 
-```sh
-npm run lint
-```
-# CineMania
+- `src/components/`: Componentes reutilizables
+- `src/views/`: Páginas de la aplicación
+- `src/services/`: Servicios para manejar la lógica de negocio
+- `src/interfaces/`: Interfaces de TypeScript para tipado
+- `src/router/`: Configuración de rutas
+
+## Características implementadas
+
+- Listado de películas con diseño responsivo
+- Filtrado por género, año y término de búsqueda
+- Ordenamiento por fecha, calificación o título
+- Vista detallada de cada película
+- Sistema de comentarios para películas
+- Diseño responsivo que se adapta a dispositivos móviles, tablets y escritorio
+- Uso de Bootstrap para el framework CSS
