@@ -1,6 +1,6 @@
 <template>
   <div class="card h-100 shadow-sm">
-    <img :src="movie.posterPath" class="card-img-top" :alt="movie.title">
+    <img :src="movie.posterPath" class="card-img-top imagen" :alt="movie.title">
     <div class="card-body d-flex flex-column">
       <div class="d-flex justify-content-between align-items-start mb-2">
         <h5 class="card-title">{{ movie.title }}</h5>
@@ -55,5 +55,10 @@ const formatDate = (dateString: string): string => {
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+.imagen{
+  height: 450px;
+  object-fit: cover;
 }
 </style>

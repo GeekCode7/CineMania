@@ -1,8 +1,8 @@
 <template>
 <div class="home">
-    <header class="bg-dark text-white p-5 mb-4 rounded">
+    <header class="bg-dark bg-gradient text-white p-5 mb-4 rounded">
       <div class="container text-center">
-        <h1 class="display-4">CineReviews</h1>
+        <h1 class="display-4 fw-bold ">CineMania</h1>
         <p class="lead">Encuentra la próxima película que quieres ver o añádela a tus favoritas</p>
       </div>
     </header>
@@ -102,5 +102,4 @@ watch(filters, () => {
 </script>
 
 <style scoped>
-
 </style>

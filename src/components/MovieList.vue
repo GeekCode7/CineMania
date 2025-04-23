@@ -9,7 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
 import type { Movie } from '@/interfaces/Movie'
 import MovieCard from '@/components/MovieCard.vue'
 
