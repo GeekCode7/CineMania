@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
         <router-link class="navbar-brand" to="/">
-          <span class="fw-bold">CineReviews</span>
+          <span class="fw-bold">CineMania</span>
         </router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
 
     <footer class="bg-dark text-light py-4 mt-5">
       <div class="container text-center">
-        <p class="mb-0">&copy; 2023 CineReviews - Sitio de reseñas de películas</p>
+        <p class="mb-0">&copy; 2025 CineMania - Sitio de reseñas de películas</p>
       </div>
     </footer>
   </div>
