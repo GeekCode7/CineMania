@@ -36,7 +36,7 @@
   }
 }
 
-// Funciones para manipular colores - VERSIÓN MODERNA
+// Funciones para manipular colores
 @function darken-color($color, $amount) {
   @return color.scale($color, $lightness: -$amount);
 }
@@ -45,7 +45,7 @@
   @return color.scale($color, $lightness: $amount);
 }
 
-// Función para convertir a porcentaje (moderna)
+// Función para convertir a porcentaje 
 @function to-percentage($value) {
   @return math.percentage(math.div($value, 100));
 }
