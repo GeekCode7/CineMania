@@ -168,18 +168,95 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
-.star-rating {
-  cursor: pointer;
-  color: #ccc;
-}
+<style scoped lang="scss">
+@use '@/assets/styles/variables' as vars;
+@use '@/assets/styles/mixins' as mix;
 
-.star-rating.active {
-  color: #ffc107;
-}
+// Anidación de selectores para el componente de comentarios
+.comment-section {
+  .card {
+    @include mix.card-shadow(1);
+    border-radius: vars.$card-border-radius;
 
-.comments-list {
-  max-height: 600px;
-  overflow-y: auto;
+    .card-header {
+      background-color: vars.$light-color;
+
+      h5 {
+        color: vars.$dark-color;
+        font-weight: vars.$font-weight-bold;
+      }
+    }
+
+    .card-body {
+      padding: vars.$spacing-lg;
+
+      .form-label {
+        font-weight: vars.$font-weight-bold;
+        color: vars.$dark-color;
+        margin-bottom: vars.$spacing-sm;
+      }
+
+      .form-control {
+        border-radius: calc(vars.$card-border-radius * 0.7);
+
+        &:focus {
+          border-color: vars.$primary-color;
+          box-shadow: 0 0 0 0.2rem rgba(vars.$primary-color, 0.25);
+        }
+      }
+
+      .btn-primary {
+        background-color: vars.$primary-color;
+        border-color: vars.$primary-color;
+        font-weight: vars.$font-weight-bold;
+
+        &:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .star-rating {
+    cursor: pointer;
+    color: vars.$star-inactive-color;
+    transition: color 0.2s ease;
+
+    &.active {
+      color: vars.$star-color;
+    }
+
+    &:hover {
+      color: mix.lighten-color(vars.$star-color, 10%);
+    }
+  }
+
+  .comments-list {
+    max-height: 600px;
+    overflow-y: auto;
+
+    .card {
+      margin-bottom: vars.$spacing-md;
+
+      .card-body {
+        padding: vars.$spacing-md;
+
+        .card-title {
+          color: vars.$dark-color;
+          font-weight: vars.$font-weight-bold;
+        }
+
+        .card-text {
+          color: vars.$secondary-color;
+          line-height: 1.6;
+        }
+
+        .text-muted {
+          font-size: vars.$font-size-base * 0.9;
+        }
+      }
+    }
+  }
 }
 </style>
