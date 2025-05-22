@@ -1,0 +1,39 @@
+@use 'bootstrap/scss/bootstrap';
+@use 'variables' as vars;
+@use 'mixins' as mix;
+
+// Estilos globales
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: vars.$font-weight-normal;
+  color: vars.$dark-color;
+  line-height: 1.6;
+}
+
+// Estilos para el hero de películas
+.movie-hero {
+  background: linear-gradient(135deg, vars.$primary-color, mix.darken-color(vars.$primary-color, 15%));
+  color: white;
+  padding: vars.$spacing-xl;
+  border-radius: vars.$card-border-radius;
+  margin-bottom: vars.$spacing-lg;
+  text-align: center;
+
+  // Anidación de selectores
+  h1 {
+    font-weight: vars.$font-weight-bold;
+    margin-bottom: vars.$spacing-md;
+    font-size: 2.5rem;
+
+    @include mix.respond-to(vars.$tablet) {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-size: vars.$font-size-base * 1.2;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
