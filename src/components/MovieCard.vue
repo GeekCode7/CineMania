@@ -62,7 +62,7 @@ const formatDate = (dateString: string): string => {
   overflow: hidden;
 
   .card-img-top {
-    height: 350px;
+    height: 450px;
     object-fit: cover;
     transition: transform 0.3s ease;
   }
