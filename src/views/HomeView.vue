@@ -1,9 +1,19 @@
 <template>
-<div class="home">
-    <header class="bg-dark bg-gradient text-white p-5 mb-4 rounded">
+  <div class="home">
+    <header class="movie-hero">
       <div class="container text-center">
-        <h1 class="display-4 fw-bold ">CineMania</h1>
+        <h1 class="display-4">CineMania</h1>
         <p class="lead">Encuentra la próxima película que quieres ver o añádela a tus favoritas</p>
+        <div class="hero-actions mt-4">
+          <router-link to="/contacto" class="btn btn-outline-light btn-lg me-3">
+            <i class="bi bi-envelope-fill me-2"></i>
+            Sugerir película
+          </router-link>
+          <a href="#movies-section" class="btn btn-light btn-lg me-3">
+            <i class="bi bi-film me-2"></i>
+            Ver películas
+          </a>
+        </div>
       </div>
     </header>
 
@@ -100,6 +110,3 @@ watch(filters, () => {
   loadMovies()
 }, { deep: true })
 </script>
-
-<style scoped>
-</style>

@@ -35,5 +35,56 @@ body {
     opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
+
+    &.lead {
+      margin-bottom: vars.$spacing-lg;
+    }
+  }
+
+  .hero-actions {
+    .btn {
+      font-weight: vars.$font-weight-bold;
+      margin-bottom: 10px;
+      border-radius: calc(vars.$card-border-radius * 1.2);
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &.btn-outline-light {
+        border: 2px solid white;
+        color: white;
+
+        &:hover {
+          background-color: white;
+          color: vars.$primary-color;
+          transform: translateY(-3px);
+          @include mix.card-shadow(2);
+        }
+      }
+
+      &.btn-light {
+        background-color: white;
+        color: vars.$primary-color;
+        border: 2px solid white;
+
+        &:hover {
+          background-color: mix.lighten-color(vars.$primary-color, 40%);
+          color: vars.$primary-color;
+          transform: translateY(-3px);
+          @include mix.card-shadow(2);
+        }
+      }
+
+      i {
+        font-size: vars.$font-size-base * 1.1;
+      }
+    }
+  }
+
+  // Responsive para los botones
+  @include mix.respond-to(#{vars.$tablet}) {
+    .hero-actions .btn {
+      font-size: vars.$font-size-base * 1.1;
+      padding: vars.$spacing-lg vars.$spacing-xl * 1.2;
+    }
   }
 }
